@@ -63,7 +63,7 @@ a {
 section {
 	position: relative;
 	text-align: center;
-	margin-top: 60px;
+	margin-top: 140px;
 }
 
 header {
@@ -73,6 +73,7 @@ header {
 #logo {
 	width: 270px;
 	height: 90px;
+	margin-top: 10px;
 	margin-bottom: 15px;
 }
 
