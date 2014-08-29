@@ -1,0 +1,191 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+	background-color: #ffffff;
+	font-family: sans-serif;
+}
+
+a {
+	color: #4c4c4c;
+	text-decoration: none;
+	display: inline;
+	margin: 10px;
+	font-size: 14px;
+}
+
+section {
+	position: relative;
+	text-align: center;
+	margin-top: 60px;
+}
+
+header {
+	position: relative;
+}
+
+#logo {
+	width: 270px;
+	height: 90px;
+	margin-bottom: 15px;
+}
+
+input {
+	width: 575px;
+	height: 25px;
+	background-image: url("images/microphone icon.png");
+	background-size: 25px;
+	background-position: right;
+	background-repeat: no-repeat;
+	border: 1px solid #e6e6e6;
+}
+
+input:hover {
+	border: 1px solid #cccccc;
+}
+
+input:focus {
+	border: 1px solid #0a6bf2;
+	outline: 0;
+}
+
+#header {
+	text-align: right;
+	margin-right: 10px;
+	padding: 10px;
+	word-spacing: -.50em;
+}
+
+#left_links {
+	float: left;
+	margin-left: 20px;
+	margin-top: 5px;
+}
+
+#right_links {
+	float: right;
+	margin-right: 20px;
+	margin-top: 5px;
+}
+
+#search_buttons {
+	margin-top: 5px;
+}
+
+.buttons {
+	margin: 7px;
+	background-color: #f3f2f5;
+	border: 1px solid #e6e6e6;
+}
+
+.buttons:hover {
+	border-bottom: 2.5px solid #d6dbe2;
+	border-top: 1px solid #d6dbe2;
+	border-right: 1px solid #d6dbe2;
+	border-left: 1px solid #d6dbe2;
+}
+
+.btn {
+	font-size: 11px;
+	font-weight: bold;
+	cursor: default;
+}
+
+footer {
+	height: 35px;
+	border-top: 1px solid #d6dbe2;
+	background: #f5f4f4;
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	padding-top: 5px;
+}
+
+button {
+	border-radius: 2px;
+}
+
+button:focus {
+	outline: 0;
+}
+
+#sign_in {
+	border: 2px solid white;
+	border-radius: 5px;
+	width: 75px;
+	height: 35px;
+	background-color: #0a6bf2;
+	padding: 0px;
+	cursor: default;
+	background: radial-gradient(#4789e7, #3c83e6);
+}
+
+#search {
+	font-size: 13px;
+	font-weight: bold;
+	color: white;
+	cursor: default;
+}
+
+.grid {
+	width: 25px;
+	height: 25px;
+	margin-right: 5px;
+	margin-bottom: -8px;
+	cursor: default;
+}
+
+.under {
+	font-size: 12px;
+}
+
+.under:hover {
+	text-decoration: underline;
+}
