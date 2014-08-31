@@ -64,6 +64,7 @@ h1 {
 button {
 	width: 75px;
 	height: 23px;
+	padding: 5px;
 	text-align: center;
 	position: absolute;
 	top: 28px;
@@ -75,6 +76,7 @@ button {
 
 button:hover {
 	background-color: #c62900;
+	border: 1px solid #c62900;
 }
 
 button:focus {
@@ -98,6 +100,7 @@ nav {
 	background-color: rgba(255, 255, 255, .3);
 	width: 100%;
 	height: 18px;
+	padding: 18px 0px;
 }
 
 nav p {
