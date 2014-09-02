@@ -1,7 +1,4 @@
 #nkabrown.github.io
+##DAMN Fine Coffee
 
-##jQuery-StreetFighter
-
-This page represents my first stab at jQuery and was made as a project for Thinkful FEWD.
-
-
+This page is currently hosting my small business landing page project for Thinkful FEWD.

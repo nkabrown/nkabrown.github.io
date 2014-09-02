@@ -1,27 +1,48 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title></title>
-		<link rel="stylesheet" href="css/reset.css">
-		<link rel="stylesheet" href="css/main.css">
-		<script src="http://code.jquery.com/jquery.min.js"></script>
-		<script src="js/app.js"></script>
+		<title>Damn Fine Coffee</title>
+		<link rel="stylesheet" href="main.css" type="text/css">
+		<link href='http://fonts.googleapis.com/css?family=Bowlby+One+SC' rel='stylesheet' type='text/css'>
 	</head>
 	<body>
-		<div class="main">
-			<div class="ryu">
-				<div class="ryu-still"></div>
-				<div class="ryu-ready"></div>
-				<div class="ryu-throwing"></div>
-				<div class="ryu-cool"></div>
-			</div>
-			<div class="hadouken"></div>
-			<div class="instructions">
-				<p>Click on Ryu to send your ki surging toward your opponent.</p>
-				<p>When your opponent has had enough, press and hold down the 'x' key.</p>
-			</div>
-			<audio id="hadouken-sound" src="sound/hadouken.mp3">
-		</div>
+		<header>
+			<h1><strong>DAMN</strong> fine coffee</h1>
+			<form action="subscriber.html" method="get">
+				<button>Sign Up</button>
+				<input type="email" name="email-address" placeholder="enter email for news and updates">
+			</form>
+		</header>
+		<nav>
+			<a href="history.html"><p>Our Story</P></a>
+			<a href="menu.html"><p>Coffee &amp; Pie</p></a>
+			<a href="locations.html"><p>Locations</p></a>
+			<a href="crafttraditions.html"><p>Coffee Traditions</p></a>
+			<a href="calendar.html"><p>Events</p></a>
+		</nav>
+		<section>	
+			<table>
+				<thead>
+					<tr>	
+						<th colspan="2">Hours</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th>M&ndash;F</th>
+						<td>6am&ndash;10pm</td>
+					</tr>
+					<tr>
+						<th>Sat &amp; Sun</th>
+						<td>8am&ndash;8pm
+					</tr>
+				</tbody>
+			</table>
+		</section>
+		<footer>
+			<p id="motto">You&rsquo;ll say &ldquo;This is&mdash;excuse me&mdash;a <em>damn</em> fine cup of coffee!&rdquo;</p>
+			<p>&copy; 2014 DAMN Fine Coffe, All Rights Reserved</P>
+		</footer>
 	</body>
 </html>
