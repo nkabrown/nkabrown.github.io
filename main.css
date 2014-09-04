@@ -47,119 +47,88 @@ table {
 	border-spacing: 0;
 }
 
+*::-webkit-input-placeholder {
+    color: #fff;
+}
+*:-moz-placeholder {
+    /* FF 4-18 */
+    color: #fff;
+}
+*::-moz-placeholder {
+    /* FF 19+ */
+    color: #fff;
+}
+*:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #fff;
+}
+
 body {
-	background-image: url("images/coffeecup.jpg");
-	background-repeat: no-repeat;
+	text-align: center;
 }
 
 h1 {
-	font-family: 'Bowlby One SC', cursive;
-	font-size: 48px;
-	color: #ff3300;
-	margin-top: 10px;
-	margin-left: 20px;
-
+	font-size: 6em;
 }
 
-button {
-	width: 75px;
-	height: 23px;
-	padding: 5px;
-	text-align: center;
-	position: absolute;
-	top: 28px;
-	right: 275px;
-	color: #fff;
-	background-color: #ff3300;
-	border: 1px solid #ff3300;
+#title {
+	font-size: 1.5em;
 }
 
-button:hover {
-	background-color: #c62900;
-	border: 1px solid #c62900;
-}
-
-button:focus {
-	outline: 0;
+#add-item {
+	width: 18px;
+	height: 18px;
+	margin-top: 5px;
+	margin-left: 5px;
+	padding-right: 10px;
 }
 
 input {
-	width: 200px;
-	height: 18px;
-	position: absolute;
-	top: 28px;
-	right: 40px;
+	text-align: center;
+	width: 350px;
+	height: 30px;
+	margin: 20px auto 7px auto;
+	color: #fff;
+	background-color: #16a77f;
+	border: 0;
+	border-radius: 12px;
+	font-size: 16px;	
 }
 
 input:focus {
 	outline: 0;
-	border: 1px solid #ff3300;
 }
 
-nav {
-	background-color: rgba(255, 255, 255, .3);
-	width: 100%;
-	height: 18px;
-	padding: 18px 0px;
-}
-
-nav p {
-	margin: 0 40px;
-	display: inline-block;
-	color: #ffa339;
-	text-shadow: .01px .01px #999999;
-	font-weight: 500;
-}
-
-nav p:hover  {
-	text-decoration: underline;
-}
-
-table {
-	margin-top: 15px;
-	margin-left: 25px;
-	color: #ffa339;
-}
-
-thead {
-	font-size: 20px;
-	font-weight: bold;
-}
-
-tbody {
-	border-top: 1px solid #ff8900;
-}
-
-th, td {
-	padding: 10px;
-	text-align: left;
-}
-
-thead th {
+.item {
 	text-align: center;
-}
-
-footer {
-	background-color: black;
-	width: 100%;
-	height: 60px;
-	position: fixed;
-	bottom: 0px;
-}
-
-footer p {
-	text-align: right;
-	font-size: 10px;
-	color: #4396b9;
-}
-
-#motto {
-	text-align: center;
+	width: 350px;
+	height: 24px;
+	margin: 7px auto;
+	padding-top: 6px;
+	color: #fff;
+	background-color: #5cc9ab;
+	border: 0;
+	border-radius: 12px;
 	font-size: 16px;
-	color: #4296b9;
-	margin-top: 22px;
 }
-strong {
-	font-weight: 900;
-	font-size: 75px;
+
+.btn_check {
+	width: 20px;
+	height: 20px;
+	float: left;
+	padding-left: 10px;
 }
+
+.btn_x {
+	width: 20px;
+	height: 20px;
+	float: right;
+	padding-right: 10px;
+}
+
+.bagged {
+	text-decoration: line-through;
+	background-color: #007051;
+}
+
+
