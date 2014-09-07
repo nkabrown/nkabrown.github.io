@@ -1,17 +1,20 @@
 $(document).ready(function() {
-	$("#iteminput").keydown(function(e) {
+	$("input").keydown(function(e) {
 		if (e.keyCode == 13) {
-			var shopitem = $("input").text();
-			$("#list").prepend('<p>'+shopitem+'</p>');
+			event.preventDefault();
+			var shopItem = $("input").val();
+			var listItem = $('<li class="item"><img class="btn_check" src="images/check.png">'+shopItem+'<img class="btn_x" src="images/x.png"></li>')
+			$(".list").append(listItem);
+			$(".iteminput").val('').empty();
 		}
 	});
-	$(".item").on('click', '.btn_check', function() {
+	$(document).on('click', '.btn_check', function() {
 		var item = $(this).closest('.item').css({
 			'background-color': '#007051',
 			'text-decoration': 'line-through'
 		});
 	});
-	$(".item").on('click', '.btn_x', function() {
+	$(document).on('click', '.btn_x', function() {
 		$(this).closest('.item').remove();
 	});
 });

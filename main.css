@@ -130,7 +130,3 @@ input:focus {
 	text-decoration: line-through;
 	background-color: #007051;
 }
-
-#list {
-	height: 400px;
-}

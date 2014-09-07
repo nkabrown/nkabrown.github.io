@@ -5,17 +5,17 @@
 		<title>Grocer&rsquo;s Bag</title>
 		<link rel="stylesheet" href="main.css" type="text/css">
 		<script src="jquery-1.11.1.min.js"></script>
-		<script src="apps.js"></script>
+		
 	</head>
 	<body>
 		<header>
 			<h1>Grocer&rsquo;s Bag</h1>
 			<div id="logo"><img src="images/shopping-bag.png" alt="grocer’s paper bag"></div>
 		</header>
-		<form action="">
+		<form>
 			<p id="title">My list</p>
 			<div>
-				<input id="iteminput" type="text" name="shopping_item" autocomplete="off" placeholder="+ Add Items">
+				<input type="text" class="iteminput" name="shopping_item" autocomplete="off" placeholder="+ Add Items">
 			</div>
 		</form>
 		<section>
@@ -25,5 +25,6 @@
 				</ol>
 			</div>
 		</section>	
+		<script src="apps.js"></script>
 	</body>
 </html>
