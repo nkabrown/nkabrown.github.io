@@ -4,6 +4,8 @@
 		<meta charset="UTF-8">
 		<title>Grocer&rsquo;s Bag</title>
 		<link rel="stylesheet" href="main.css" type="text/css">
+		<script src="jquery-1.11.1.min.js"></script>
+		<script src="apps.js"></script>
 	</head>
 	<body>
 		<header>
@@ -13,16 +15,15 @@
 		<form action="">
 			<p id="title">My list</p>
 			<div>
-				<input type="text" name="shopping_item" autocomplete="off" placeholder="+ Add Items">
+				<input id="iteminput" type="text" name="shopping_item" autocomplete="off" placeholder="+ Add Items">
 			</div>
 		</form>
 		<section>
-			<p class="item bagged"><img class="btn_check" src="images/check.png">Bananas<img class="btn_x" src="images/x.png"></p>
-			<p class="item bagged"><img class="btn_check" src="images/check.png">Grapes<img class="btn_x" src="images/x.png"></p>
-			<p class="item"><img class="btn_check" src="images/check.png">Ground Beef<img class="btn_x" src="images/x.png"></p>
-			<p class="item"><img class="btn_check" src="images/check.png">Sliced Ham<img class="btn_x" src="images/x.png"></p>
-			<p class="item"><img class="btn_check" src="images/check.png">Lettuce<img class="btn_x" src="images/x.png"></p>
-			<p class="item"><img class="btn_check" src="images/check.png">Carrots<img class="btn_x" src="images/x.png"></p>
-		</section>
+			<div>
+				<ol class="list">
+					<li class="item"><img class="btn_check" src="images/check.png">Sample Item List<img class="btn_x" src="images/x.png"></li>
+				</ol>
+			</div>
+		</section>	
 	</body>
 </html>
