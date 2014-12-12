@@ -99,6 +99,62 @@ input:focus {
 	outline: 0;
 }
 
+::-webkit-input-placeholder {
+  opacity: .5;
+}
+
+:-moz-placeholder {
+  opacity: .5;
+}
+
+::-moz-placeholder {
+  opacity: .5;
+}
+
+:-ms-input-placeholder {
+  opacity: .5;
+}
+
+:hover::-webkit-input-placeholder {
+  opacity: .95;
+}
+
+:hover::-moz-placeholder {
+  opacity: .95;
+}
+
+:hover:-moz-placeholder {
+  opacity: .95;
+}
+
+:hover:-ms-input-placeholder {
+  opacity: .95;
+}
+
+:focus::-webkit-input-placeholder {
+  opacity: 0;
+  -webkit-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+
+:focus::-moz-placeholder {
+  opacity: 0;
+  -moz-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+
+:focus:-moz-placeholder {
+  opacity: 0;
+  -moz-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+
+:focus:-ms-input-placeholder {
+  opacity: 0;
+  -ms-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+
 .item {
 	text-align: center;
 	width: 350px;
