@@ -1,188 +1,46 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-*::-webkit-input-placeholder {
-    color: #fff;
-}
-*:-moz-placeholder {
-    /* FF 4-18 */
-    color: #fff;
-}
-*::-moz-placeholder {
-    /* FF 19+ */
-    color: #fff;
-}
-*:-ms-input-placeholder {
-    /* IE 10+ */
-    color: #fff;
-}
-
-body {
-	text-align: center;
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
 }
 
 h1 {
-	font-size: 6em;
+  text-align: center;
+  font-family: "karlaregular", sans-serif;
+} 
+
+.bar {
+  fill: steelblue;
 }
 
-#title {
-	font-size: 1.5em;
+.axis text {
+  font-size: 10px;
+  font-family: sans-serif;
 }
 
-#add-item {
-	width: 18px;
-	height: 18px;
-	margin-top: 5px;
-	margin-left: 5px;
-	padding-right: 10px;
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
 }
 
-input {
-	text-align: center;
-	width: 350px;
-	height: 30px;
-	margin: 20px auto 7px auto;
-	color: #fff;
-	background-color: #16a77f;
-	border: 0;
-	border-radius: 12px;
-	font-size: 16px;	
+.x.axis path {
+  display: none;
 }
 
-input:focus {
-	outline: 0;
+.citation {
+  font-size: 8px;
+  font-family: "karlaregular", sans-serif;
 }
 
-::-webkit-input-placeholder {
-  opacity: .5;
-}
-
-:-moz-placeholder {
-  opacity: .5;
-}
-
-::-moz-placeholder {
-  opacity: .5;
-}
-
-:-ms-input-placeholder {
-  opacity: .5;
-}
-
-:hover::-webkit-input-placeholder {
-  opacity: .95;
-}
-
-:hover::-moz-placeholder {
-  opacity: .95;
-}
-
-:hover:-moz-placeholder {
-  opacity: .95;
-}
-
-:hover:-ms-input-placeholder {
-  opacity: .95;
-}
-
-:focus::-webkit-input-placeholder {
-  opacity: 0;
-  -webkit-transition: opacity 0.35s ease-in-out;
-  transition: opacity 0.35s ease-in-out;
-}
-
-:focus::-moz-placeholder {
-  opacity: 0;
-  -moz-transition: opacity 0.35s ease-in-out;
-  transition: opacity 0.35s ease-in-out;
-}
-
-:focus:-moz-placeholder {
-  opacity: 0;
-  -moz-transition: opacity 0.35s ease-in-out;
-  transition: opacity 0.35s ease-in-out;
-}
-
-:focus:-ms-input-placeholder {
-  opacity: 0;
-  -ms-transition: opacity 0.35s ease-in-out;
-  transition: opacity 0.35s ease-in-out;
-}
-
-.item {
-	text-align: center;
-	width: 350px;
-	height: 24px;
-	margin: 7px auto;
-	padding-top: 6px;
-	color: #fff;
-	background-color: #5cc9ab;
-	border: 0;
-	border-radius: 12px;
-	font-size: 16px;
-}
-
-.btn_check {
-	width: 20px;
-	height: 20px;
-	float: left;
-	padding-left: 10px;
-}
-
-.btn_x {
-	width: 20px;
-	height: 20px;
-	float: right;
-	padding-right: 10px;
-}
-
-.bagged {
-	text-decoration: line-through;
-	background-color: #007051;
+@font-face {
+    font-family: 'karlaregular';
+    src: url('fonts/karla-regular-webfont.eot');
+    src: url('fonts/karla-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/karla-regular-webfont.woff2') format('woff2'),
+         url('fonts/karla-regular-webfont.woff') format('woff'),
+         url('fonts/karla-regular-webfont.ttf') format('truetype'),
+         url('fonts/karla-regular-webfont.svg#karlaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
