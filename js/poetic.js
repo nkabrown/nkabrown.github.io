@@ -13,10 +13,10 @@ var letterE = letters.filter(function(d) { return d == 'e'; });
 var letterM = letters.filter(function(d) { return d == 'm'; });
 var letterO = letters.filter(function(d) { return d == 'o'; });
 
-/*rotation(letterD);
+rotation(letterD);
 moveRight(letterE);
 moveRight(letterM);
-moveLeft(letterO);*/
+moveLeft(letterO);
 
 function rotation(selection) {
   selection.transition('flip').duration(time).each('start', function() { d3.select(this).style('transform', 'rotate(0deg)'); }).style('transform', 'rotate(-180deg) translateY(-25px)');
@@ -32,13 +32,8 @@ function moveLeft(selection) {
 }
 
 setInterval(function() {
-  console.log(poemsState);
-  if (poemsState == false) {
     rotation(letterD);
     moveRight(letterE);
     moveRight(letterM);
     moveLeft(letterO);
-  } else {
-
-  }
-}, 2000);
+}, 6000);
