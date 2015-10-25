@@ -1,0 +1,32 @@
+body {
+  font-size: 16pt;
+  background-color: #222;
+}
+
+.chart-container {
+  margin-left: -125px;
+  margin-top: -375px;
+}
+
+.svg {
+  z-index: 0;
+}
+
+.container {
+  position: absolute;
+  top: 0px;
+  left: 50px;
+}
+
+.block {
+  display: inline-block;
+  width: 228px;
+  height: 200px;
+  z-index: 1;
+}
+
+h1 {
+  font-family: 'Futura', sans-serif;
+  color: grey;
+  text-align: center;
+}
