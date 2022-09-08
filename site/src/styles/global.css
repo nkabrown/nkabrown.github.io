@@ -1,0 +1,13 @@
+@import './reset.css';
+
+:root {
+  --main-font: 'Berkeley Mono', sans-serif;
+}
+
+body {
+  font-family: var(--main-font);
+}
+
+main {
+  padding: 40px;
+}

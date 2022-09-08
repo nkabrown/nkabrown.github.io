@@ -4,5 +4,14 @@ node_modules/
 # ignore Desktop Services Store
 .DS_Store
 
-# ignore built files 
-_site-dev/
+# ignore specific Rocket files
+*-mdjs-generated.js
+*-converted-md-source.js
+*-converted-md.js
+*-converted-html.js
+_site
+_site-dev
+
+# ignore environment variables
+.env
+.env.production

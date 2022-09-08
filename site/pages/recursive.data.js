@@ -8,10 +8,13 @@ export const layout = data => html`
     <head>
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width" />
-      <title>Rocket</title>
+      <title>Nathan K A Brown</title>
+      <link rel="stylesheet" href="../src/styles/global.css" />
     </head>
     <body>
-      ${data.content()}
+      <main>
+        ${data.content()}
+      </main>
     </body>
   </html>
 `;
