@@ -1,0 +1,11 @@
+trailingComma: none
+overrides:
+  - files:
+      - "*.js"
+      - "*.mjs"
+      - "*.ts"
+    options:
+      singleQuote: true
+  - files: "*.md"
+    options:
+      tabWidth: 4

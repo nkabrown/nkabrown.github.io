@@ -1,19 +1,41 @@
 {
-  "name": "rocket-minimal-starter",
+  "name": "nkabrown.github.io",
   "version": "0.0.1",
   "private": true,
-  "description": "Only includes the minimal basics",
+  "description": "my root github pages site",
   "type": "module",
   "scripts": {
     "build": "rocket build",
     "dev": "npm start",
+    "format": "npm run format:prettier && npm run format:eslint",
+    "format:eslint": "eslint --fix --ext .js,.mjs,.ts,.html --ignore-path .gitignore .",
+    "format:prettier": "prettier --write --ignore-path .gitignore .",
+    "lint": "npm run lint:eslint & npm run lint:prettier",
+    "lint:eslint": "eslint --ext .js,.mjs,.ts,.html --ignore-path .gitignore .",
+    "lint:prettier": "prettier --check --ignore-path .gitignore .",
     "preview": "rocket preview --open",
-    "start": "NODE_DEBUG=engine:rendering rocket start --open"
+    "start": "NODE_DEBUG=engine:rendering rocket start --open",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@rocket/cli": "^0.20.0",
     "@rocket/engine": "^0.2.0",
-    "lit": "^2.3.0"
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-html": "^7.1.0",
+    "eslint-plugin-lit": "^1.6.1",
+    "eslint-plugin-lit-a11y": "^2.2.2",
+    "eslint-plugin-wc": "^1.3.2",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "lit": "^2.3.0",
+    "prettier": "^2.7.1"
   },
-  "@rocket/template-name": "Minimal Starter"
+  "@rocket/template-name": "Minimal Starter",
+  "lint-staged": {
+    "*.{js,mjs,html}": [
+      "prettier --write",
+      "eslint --fix"
+    ],
+    "*.{css,json,yml,md}": "prettier --write"
+  }
 }
