@@ -1,0 +1,19 @@
+{
+  "name": "rocket-minimal-starter",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Only includes the minimal basics",
+  "type": "module",
+  "scripts": {
+    "build": "rocket build",
+    "dev": "npm start",
+    "preview": "rocket preview --open",
+    "start": "NODE_DEBUG=engine:rendering rocket start --open"
+  },
+  "devDependencies": {
+    "@rocket/cli": "^0.20.0",
+    "@rocket/engine": "^0.2.0",
+    "lit": "^2.3.0"
+  },
+  "@rocket/template-name": "Minimal Starter"
+}
