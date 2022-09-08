@@ -12,9 +12,7 @@ export const layout = data => html`
       <link rel="stylesheet" href="../src/styles/global.css" />
     </head>
     <body>
-      <main>
-        ${data.content()}
-      </main>
+      <main>${data.content()}</main>
     </body>
   </html>
 `;

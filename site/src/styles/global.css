@@ -1,7 +1,7 @@
-@import './reset.css';
+@import "./reset.css";
 
 :root {
-  --main-font: 'Berkeley Mono', sans-serif;
+  --main-font: "Berkeley Mono", sans-serif;
 }
 
 body {
