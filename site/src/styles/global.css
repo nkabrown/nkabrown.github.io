@@ -11,3 +11,8 @@ body {
 main {
   padding: 40px;
 }
+
+h2,
+p {
+  padding-bottom: 12px;
+}

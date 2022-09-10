@@ -17,6 +17,32 @@
       "outputRelativeFilePath": "about/index.html",
       "sourceRelativeFilePath": "about.rocket.js",
       "level": 1
+    },
+    {
+      "title": "Nathan K A Brown",
+      "headlinesWithId": [
+        {
+          "text": "Setting a Browser Support Baseline",
+          "id": "setting-a-browser-support-baseline",
+          "level": 2
+        },
+        {
+          "text": "Code Formatting",
+          "id": "code-formatting",
+          "level": 2
+        },
+        {
+          "text": "Why do I prefer YAML for my configuration files?",
+          "id": "why-do-i-prefer-yaml-for-my-configuration-files",
+          "level": 2
+        }
+      ],
+      "name": "Nathan K A Brown",
+      "menuLinkText": "Nathan K A Brown",
+      "url": "/philosophy/",
+      "outputRelativeFilePath": "philosophy/index.html",
+      "sourceRelativeFilePath": "philosophy.rocket.md",
+      "level": 1
     }
   ]
 }
