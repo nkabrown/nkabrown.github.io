@@ -9,6 +9,10 @@ export const layout = data => html`
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width" />
       <title>Nathan K A Brown</title>
+      <link
+        rel="stylesheet"
+        href="../src/styles/outdated-browser-wall.v1.css"
+      />
       <link rel="stylesheet" href="../src/styles/global.css" />
     </head>
     <body>
