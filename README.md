@@ -4,6 +4,7 @@
 
 **Development Dependencies**
 
+-   [browserslist](https://github.com/browserslist/browserslist) - targeted browser list for tooling
 -   [eslint](https://eslint.org) - static analysis to fix JavaScript problems
 -   [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier) - turn off linting rules that conflict with prettier
 -   [eslint-plugin-html](https://github.com/BenoitZugmeyer/eslint-plugin-html) - linting rules for inline scripts in html

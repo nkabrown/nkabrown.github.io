@@ -20,6 +20,7 @@
   "devDependencies": {
     "@rocket/cli": "^0.20.0",
     "@rocket/engine": "^0.2.0",
+    "browserslist": "^4.21.4",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-html": "^7.1.0",
     "eslint-plugin-lit": "^1.6.1",
