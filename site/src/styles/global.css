@@ -1,10 +1,12 @@
 @import "./reset.css";
 
 :root {
-  --main-font: "Berkeley Mono", sans-serif;
+  --main-font: "IBM Plex Mono", sans-serif;
 }
 
 body {
+  background-color: #fffcf5;
+  color: #0b0d1a;
   font-family: var(--main-font);
 }
 
@@ -15,4 +17,14 @@ main {
 h2,
 p {
   padding-bottom: 12px;
+}
+
+a {
+  color: #248cc0;
+}
+
+code {
+  background-color: #e3f2fd;
+  border-radius: 2px;
+  padding: 5.5px;
 }
