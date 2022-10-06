@@ -9,13 +9,19 @@ export { html, layout };
 
 ## Setting a Browser Support Baseline
 
+-   [browserslist](https://github.com/browserslist/browserslist) - targeted browser list for tooling
+-   [eslint-plugin-compat](https://github.com/amilajack/eslint-plugin-compat) - linting for browser compatible code patterns
+
 Only support relatively modern browsers. The simplest way to test user agent support is through the `@support` CSS conditional rule and I'm checking for CSS feature support in `outdated-browser-wall.css`. Supporting relatively modern browsers enables usage of new JS, CSS, and Web API features without the need to polyfill. Users on outdated browsers are gently reminded to update or switch improving the future for both users and developers.
 
 Using the browser support baseline I've set in `outdated-browser-wall.css` with [browserslist](https://github.com/browserslist/browserslist) I can improve the targeting accuracy of some specific frontend tools. The browser support baseline is replicated in my `.browserslistrc` file.
 
 ## Code Formatting
 
-I am using [prettier](https://prettier.io) to format this project code, particularly when files are staged to be commited. Prettier is a low configuration tool with very limited config options. In this sense it's opinionated and makes many code formatting decisions for you. I use a simple configuration file with two exceptions to prettier's defaults: using single quotes in JavaScript and TypeScript files and setting a 4 space indentation level on markdown files.
+-   [prettier](https://prettier.io/) - low configuration opinionated code formatter
+-   [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier) - turn off linting rules that conflict with prettier
+
+I am using [prettier](https://prettier.io) to format this project code, particularly when files are staged to be commited. Prettier is a low configuration tool which strictly limits what can be configured. In this sense it's opinionated and makes many code formatting decisions for you. I use a simple configuration file with minimal exceptions to prettier's defaults, such as, avoiding parentheses in arrow functions, using single quotes in JavaScript and TypeScript files, and setting a 4 space indentation level on markdown files.
 
 Formatting code is an important step to complete before code review to eliminate whole classes of nit-picky issues. Reviewers can focus on more substantive issues. Rework is minimized.
 
