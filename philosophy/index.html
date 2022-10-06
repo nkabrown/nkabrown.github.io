@@ -10,7 +10,7 @@
     
 </head>
     <body>
-      <main><!--lit-part BRUAAAUVAAA=--><!--lit-part 0RY5kp63bvc=--><!-- prettier-ignore --><!--/lit-part--><!--lit-part EzKpEsoPsr4=--><h2 id="setting-a-browser-support-baseline"><a aria-hidden="true" tabindex="-1" href="#setting-a-browser-support-baseline"><span class="icon icon-link"></span></a>Setting a Browser Support Baseline</h2>
+      <main><!--lit-part BRUAAAUVAAA=--><!--lit-part 0RY5kp63bvc=--><!-- prettier-ignore --><!--/lit-part--><!--lit-part cL+Fw7305F0=--><h2 id="setting-a-browser-support-baseline"><a aria-hidden="true" tabindex="-1" href="#setting-a-browser-support-baseline"><span class="icon icon-link"></span></a>Setting a Browser Support Baseline</h2>
 <ul>
 <li><a href="https://github.com/browserslist/browserslist">browserslist</a> - targeted browser list for tooling</li>
 <li><a href="https://github.com/amilajack/eslint-plugin-compat">eslint-plugin-compat</a> - linting for browser compatible code patterns</li>
@@ -28,15 +28,15 @@
 <p>When manually formatting files it's polite to keep formatting changes in a separate commit from other code changes. This makes formatting changes easy to isolate during code reviews.</p>
 <h2 id="linting"><a aria-hidden="true" tabindex="-1" href="#linting"><span class="icon icon-link"></span></a>Linting</h2>
 <ul>
-<li><a href="https://eslint.org">eslint</a> - static analysis to find and fix JavaScript problems</li>
+<li><a href="https://eslint.org">ESLint</a> - static analysis to find and fix JavaScript problems</li>
 <li><a href="https://github.com/prettier/eslint-config-prettier">eslint-config-prettier</a> - turn off linting rules that conflict with prettier</li>
 <li><a href="https://github.com/amilajack/eslint-plugin-compat">eslint-plugin-compat</a> - linting for browser compatible code patterns</li>
-<li><a href="https://github.com/BenoitZugmeyer/eslint-plugin-html">eslint-plugin-html</a> - linting rules for inline scripts in html</li>
+<li><a href="https://github.com/BenoitZugmeyer/eslint-plugin-html">eslint-plugin-html</a> - apply linting rules to inline scripts in html</li>
 <li><a href="https://github.com/43081j/eslint-plugin-lit">eslint-plugin-lit</a> - linting rules for Lit templating library</li>
 <li><a href="https://open-wc.org/docs/linting/eslint-plugin-lit-a11y/overview/">eslint-plugin-lit-a11y</a> - linting rules for accessibility in lit components</li>
 <li><a href="https://github.com/43081j/eslint-plugin-wc">eslint-plugin-wc</a> - linting rules for custom elements (web components)</li>
 </ul>
-<p>I am using <a href="https://eslint.org">eslint</a> to lint project frontend code, particularly files that are staged to be committed. Eslint statically analyzes JavaScript code looking for code patterns that may cause errors, fall short of best practices, or cause code formatting issues. Each file of code is parsed into an abstract syntax tree (AST). The linter walks down the AST and then back up visiting each node twice. Each node's type triggers related linting rules and the linter collects and reports observed errors and warnings.</p>
+<p>I am using <a href="https://eslint.org">ESLint</a> to lint project frontend code, particularly files that are staged to be committed. ESLint statically analyzes JavaScript code looking for code patterns that may cause errors, fall short of best practices, or cause code formatting issues. Each file of code is parsed into an abstract syntax tree (AST). The linter walks down the AST and then back up visiting each node twice. Each node's type triggers related linting rules and the linter collects and reports observed errors and warnings.</p>
 <p>I use rules from the <code>eslint:recommend</code> configuration file to report common problems. I'm using <code>eslint-config-prettier</code> to turn off the layout linting rules related to code formatting since <code>prettier</code> handles those issues. I have web component/Lit specific rules from the <code>wc</code> and <code>lit</code> plugins and extend their recommended rules with a few additions. The <code>lit-a11y</code> plugin spots accessibility issues within web components/Lit. I'm using <code>eslint-plugin-compat</code> to provide IDE support and linting against my browser support baseline. My JS linting rules are applied to inline scripts in HTML by the <code>html</code> plugin.</p>
 <h2 id="why-do-i-prefer-yaml-for-my-configuration-files"><a aria-hidden="true" tabindex="-1" href="#why-do-i-prefer-yaml-for-my-configuration-files"><span class="icon icon-link"></span></a>Why do I prefer YAML for my configuration files?</h2>
 <p>Both JSON and YAML are data serialization languages, but YAML supports comments. YAML is also becoming the preferred configuration language for infrastructure, being perceived as more human readable and simpler than JSON. I've chosen to configure my tooling with YAML wherever possible to align myself with current trends in configuration and to build familiarity with this configuration language.</p>
