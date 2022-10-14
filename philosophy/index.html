@@ -10,7 +10,7 @@
     
 </head>
     <body>
-      <main><!--lit-part BRUAAAUVAAA=--><!--lit-part 0RY5kp63bvc=--><!-- prettier-ignore --><!--/lit-part--><!--lit-part xsioVFpOa4c=--><h2 id="setting-a-browser-support-baseline"><a aria-hidden="true" tabindex="-1" href="#setting-a-browser-support-baseline"><span class="icon icon-link"></span></a>Setting a Browser Support Baseline</h2>
+      <main><!--lit-part BRUAAAUVAAA=--><!--lit-part 0RY5kp63bvc=--><!-- prettier-ignore --><!--/lit-part--><!--lit-part CC38DEjNp3Y=--><h2 id="setting-a-browser-support-baseline"><a aria-hidden="true" tabindex="-1" href="#setting-a-browser-support-baseline"><span class="icon icon-link"></span></a>Setting a Browser Support Baseline</h2>
 <ul>
 <li><a href="https://github.com/browserslist/browserslist">browserslist</a> - targeted browser list for tooling</li>
 <li><a href="https://github.com/amilajack/eslint-plugin-compat">eslint-plugin-compat</a> - linting for browser compatible code patterns</li>
@@ -23,7 +23,7 @@
 <li><a href="https://github.com/okonet/lint-staged">lint-staged</a> - execute scripts on staged files via git pre-commit hook</li>
 </ul>
 <p>One of the most valuable processes to improve the quality of code reviews is to setup a pre-commit hook that lints and formats all code going to a PR. Linting helps catch common errors and suggests best practices. It's an automated code review. Enforcing formatting removes whole classes of nit-picky issues around layout, such as indentation variance and semi-colon usage. This pre-commit hook can be bypassed with <code>git commit --no-verify</code>, but codebases should be kept clean of linting errors and effort should be expended to remove linting errors and warnings.</p>
-<p>I'm using <a href="https://typicode.github.io/husky/#/">husky</a> to easily create git hooks. It's important to add <code>husky install</code> to your <code>prepare</code> script in <code>package.json</code> so git hooks are installed when developers run <code>npm install</code> or <code>npm ci</code>. I'm using <a href="https://github.com/okonet/lint-staged">lint-staged</a> to run the formatter and linter as shell scripts on staged files. These tasks run concurrently by default but can be configured to run in order, see <a href="https://github.com/okonet/lint-staged#task-concurrency">task concurrency</a>.</p>
+<p>I'm using <a href="https://typicode.github.io/husky/#/">husky</a> to easily create git hooks. It's important to add <code>husky install</code> to your <code>prepare</code> script in <code>package.json</code> so git hooks are installed when new team members run <code>npm install</code> or <code>npm ci</code>. I'm using <a href="https://github.com/okonet/lint-staged">lint-staged</a> to run the formatter and linter as shell scripts on staged files. These tasks run concurrently by default but can be configured to run in order to avoid race conditions, see <a href="https://github.com/okonet/lint-staged#task-concurrency">task concurrency</a>.</p>
 <h2 id="code-formatting"><a aria-hidden="true" tabindex="-1" href="#code-formatting"><span class="icon icon-link"></span></a>Code Formatting</h2>
 <ul>
 <li><a href="https://prettier.io/">prettier</a> - low configuration opinionated code formatter</li>
