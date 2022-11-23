@@ -1,5 +1,18 @@
 # Interactive Résumé
 
+## Quickstart
+
+```shell
+# test npm version, if version < 7 run 'npm install -g npm@latest'
+npm --version
+
+# installs exact dependencies and sets up git hooks
+npm ci
+
+# run local development server
+npm run start
+```
+
 ## Supporting Documentation
 
 **Development Dependencies**
