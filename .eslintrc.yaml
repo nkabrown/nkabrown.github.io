@@ -42,3 +42,4 @@ rules:
   wc/no-constructor-params: error
   wc/no-typos: error
   wc/require-listener-teardown: error
+  lit/value-after-constraints: error
