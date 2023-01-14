@@ -43,3 +43,4 @@ rules:
   wc/no-typos: error
   wc/require-listener-teardown: error
   lit/value-after-constraints: error
+  lit/no-native-attributes: error
