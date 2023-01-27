@@ -1,23 +1,20 @@
 {
-  "title": "Rocket",
-  "h1": "Rocket",
-  "name": "Rocket",
-  "menuLinkText": "Rocket",
+  "title": "Nathan K A Brown",
+  "h1": "Nathan K A Brown",
+  "headlinesWithId": [
+    {
+      "text": "Nathan K A Brown",
+      "id": "nathan-k-a-brown",
+      "level": 1
+    }
+  ],
+  "name": "Nathan K A Brown",
+  "menuLinkText": "Nathan K A Brown",
   "url": "/",
   "outputRelativeFilePath": "index.html",
-  "sourceRelativeFilePath": "index.rocket.html",
+  "sourceRelativeFilePath": "index.rocket.md",
   "level": 0,
   "children": [
-    {
-      "title": "Rocket",
-      "h1": "About",
-      "name": "About",
-      "menuLinkText": "About",
-      "url": "/about/",
-      "outputRelativeFilePath": "about/index.html",
-      "sourceRelativeFilePath": "about.rocket.js",
-      "level": 1
-    },
     {
       "title": "Nathan K A Brown",
       "headlinesWithId": [
@@ -27,13 +24,33 @@
           "level": 2
         },
         {
+          "text": "Pre-commit Hook",
+          "id": "pre-commit-hook",
+          "level": 2
+        },
+        {
           "text": "Code Formatting",
           "id": "code-formatting",
           "level": 2
         },
         {
+          "text": "Linting",
+          "id": "linting",
+          "level": 2
+        },
+        {
+          "text": "Housekeeping for Linting/Formatting Tasks",
+          "id": "housekeeping-for-lintingformatting-tasks",
+          "level": 2
+        },
+        {
           "text": "Why do I prefer YAML for my configuration files?",
           "id": "why-do-i-prefer-yaml-for-my-configuration-files",
+          "level": 2
+        },
+        {
+          "text": "Updating Dependencies",
+          "id": "updating-dependencies",
           "level": 2
         }
       ],
