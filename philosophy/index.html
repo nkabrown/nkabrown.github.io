@@ -10,7 +10,7 @@
     
 </head>
     <body>
-      <main><!--lit-part BRUAAAUVAAA=--><!--lit-part 0RY5kp63bvc=--><!-- prettier-ignore --><!--/lit-part--><!--lit-part Gey4z8Y5vFc=--><h2 id="setting-a-browser-support-baseline"><a aria-hidden="true" tabindex="-1" href="#setting-a-browser-support-baseline"><span class="icon icon-link"></span></a>Setting a Browser Support Baseline</h2>
+      <main><!--lit-part BRUAAAUVAAA=--><!--lit-part 0RY5kp63bvc=--><!-- prettier-ignore --><!--/lit-part--><!--lit-part CqjHryxl3NQ=--><h2 id="setting-a-browser-support-baseline"><a aria-hidden="true" tabindex="-1" href="#setting-a-browser-support-baseline"><span class="icon icon-link"></span></a>Setting a Browser Support Baseline</h2>
 <ul>
 <li><a href="https://github.com/browserslist/browserslist">browserslist</a> - targeted browser list for tooling</li>
 <li><a href="https://github.com/amilajack/eslint-plugin-compat">eslint-plugin-compat</a> - linting for browser compatible code patterns</li>
@@ -60,7 +60,19 @@
 <li><a href="https://github.com/google/wireit">Wireit</a></li>
 </ul>
 <p>I use the Wireit library to optimize <code>npm</code> script processes and re-run scripts when dependencies change. Wireit allows incremental updating of scripts with minimal changes to <code>package.json</code>, linking scripts together as dependencies, speedups to builds and testing through caching and incremental builds, and triggering scripts based on changes to watched files.</p>
-<h2 id="updating-dependencies"><a aria-hidden="true" tabindex="-1" href="#updating-dependencies"><span class="icon icon-link"></span></a>Updating Dependencies</h2>
+<h2 id="regular-dependency-updates"><a aria-hidden="true" tabindex="-1" href="#regular-dependency-updates"><span class="icon icon-link"></span></a>Regular Dependency Updates</h2>
+<p>Regular dependency updates are important for long-lasting codebases. For short-term projects and one-off scripts nothing might ever have to change, but for software that is in use for a long enough period of time everything will likely have to change, eventually. Regular dependency updates are a good practice because they chunk the amount of changes we have to review and navigate into a managable amount and save us from problematic version migrations. They keep our systems in tip-top shape and help us avoid technical debt.</p>
+<p>Make them regular because:</p>
+<ul>
+<li>You want to keep the number of changes you have to review for any dependency at any one time minimal.</li>
+<li>You want to avoid deferring breaking changes and gathering them all up into a problematic, complex, and hard to understand series of version migrations.</li>
+<li>You want to resolve security vulernabilites promptly.</li>
+<li>You want new improvements and fixes to flow into your project regularly.</li>
+<li>You want your technical debt to be minimal and managable.</li>
+</ul>
+<p>You want to do this knowledgably and with care. This is not an automated, thoughtless process. You want to review the change log of every dependency as you update. For prod dependencies in particular you will want to glance at the open issues that have recently come in to avoid problematic versions.</p>
+<p>Here's a short example guide to the process for frontend teams that can be added to a README or CONTRIBUTING page.</p>
+<p><strong>Updating Dependencies</strong></p>
 <p>Regularly updating dependencies and dev dependencies is very beneficial for long lasting codebases.</p>
 <ul>
 <li>Run <code>npm outdated</code> to list dependencies in need of review.</li>
@@ -68,6 +80,7 @@
 <ul>
 <li>Is there new functionality this codebase can use?</li>
 <li>Do changes need to be made to upgrade?</li>
+<li>Are any problematic issues associated with these changes?</li>
 </ul>
 </li>
 <li>Run <code>npx browserslist-lint</code> to update <code>caniuse-lite</code> database.</li>
