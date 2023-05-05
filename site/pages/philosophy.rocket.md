@@ -83,9 +83,9 @@ I use the Wireit library to optimize `npm` script processes and re-run scripts w
 -   [rollup-plugin-summary](https://yousifalraheem.github.io/rollup-plugin-summary/) - summarizes size of rollup build output
 -   [@rollup/plugin-terser](https://github.com/rollup/plugins/tree/master/packages/terser) - parse, mangle, and minify JS with terser
 
-We want to combine our individual files and components into an application in an optimized way and we use Rollup as our module bundler to accomplish this. Rollup makes our bundles leaner and improves application start-up time. Rollup uses the EcmaScript module standard instead of non-standardized module approaches like CommonJS and AMD. Rollup also statically analyzes code imports and performs [tree-shaking](https://rollupjs.org/faqs/#what-is-tree-shaking) to remove unused code from the bundle output.
+I want to combine my individual files and components into an application in an optimized way and I use Rollup as my module bundler to accomplish this. Rollup makes bundles leaner and improves application start-up time. Rollup uses the EcmaScript module standard instead of non-standardized module approaches like CommonJS and AMD. Rollup also statically analyzes code imports and performs [tree-shaking](https://rollupjs.org/faqs/#what-is-tree-shaking) to remove unused code from the bundle output.
 
-Our selection of plugins is compatible with Rollup v3. For guidance on migrating from Rollup v2 to v3 see the [Rollup v3 migration guide](https://rollupjs.org/migration/).
+This selection of plugins is compatible with Rollup v3. For guidance on migrating from Rollup v2 to v3 see the [Rollup v3 migration guide](https://rollupjs.org/migration/).
 
 ## Repository Healthcheck
 
