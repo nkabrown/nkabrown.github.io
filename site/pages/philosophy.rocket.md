@@ -73,6 +73,20 @@ Both JSON and YAML are data serialization languages, but YAML supports comments.
 
 I use the Wireit library to optimize `npm` script processes and re-run scripts when dependencies change. Wireit allows incremental updating of scripts with minimal changes to `package.json`, linking scripts together as dependencies, speedups to builds and testing through caching and incremental builds, and triggering scripts based on changes to watched files.
 
+## Bundling
+
+-   [rollup](https://rollupjs.org/) - tree-shaking ES6 module bundler for JavaScript
+-   [rollup-plugin-copy](https://github.com/vladshcherbin/rollup-plugin-copy) - copy files and directories
+-   [rollup-plugin-html-literals](https://github.com/jleeson/rollup-plugin-html-literals) - minify html and css template literals
+-   [@rollup/plugin-node-resolve](https://github.com/rollup/plugins/tree/master/packages/node-resolve) - resolve paths to node modules
+-   [@rollup/plugin-replace](https://github.com/rollup/plugins/tree/master/packages/replace) - replace targeted strings
+-   [rollup-plugin-summary](https://yousifalraheem.github.io/rollup-plugin-summary/) - summarizes size of rollup build output
+-   [@rollup/plugin-terser](https://github.com/rollup/plugins/tree/master/packages/terser) - parse, mangle, and minify JS with terser
+
+We want to combine our individual files and components into an application in an optimized way and we use Rollup as our module bundler to accomplish this. Rollup makes our bundles leaner and improves application start-up time. Rollup uses the EcmaScript module standard instead of non-standardized module approaches like CommonJS and AMD. Rollup also statically analyzes code imports and performs [tree-shaking](https://rollupjs.org/faqs/#what-is-tree-shaking) to remove unused code from the bundle output.
+
+Our selection of plugins is compatible with Rollup v3. For guidance on migrating from Rollup v2 to v3 see the [Rollup v3 migration guide](https://rollupjs.org/migration/).
+
 ## Repository Healthcheck
 
 -   Is there a pre-commit hook that lints and formats code prior to PRs?
