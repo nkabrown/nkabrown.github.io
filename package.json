@@ -35,10 +35,10 @@
   },
   "@rocket/template-name": "Minimal Starter",
   "lint-staged": {
-    "*.{js,mjs,html}": [
+    "*.{html,js,mjs}": [
       "prettier --write",
       "eslint --fix"
     ],
-    "*.{css,json,yml,md}": "prettier --write"
+    "*.{css,json,md,yml}": "prettier --write"
   }
 }
